@@ -1,0 +1,30 @@
+
+.cartButton 
+{
+    display: flex;
+    flex-direction: row;
+    gap: 1.2rem;
+    width: 15rem;
+    height: 2rem;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 1.5rem 0;
+    border: 1px solid cyan;
+    border-radius: 0.5rem;
+}
+
+.badge 
+{
+    background-color: cyan;
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+
+}

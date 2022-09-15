@@ -1,0 +1,18 @@
+
+.header 
+{
+    display: flex;
+    width: 100vw;
+    height: 8rem;
+    background-color: black;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.header > h3 
+{
+    color:aliceblue;
+    font-size: 2rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
