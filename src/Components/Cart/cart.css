@@ -1,0 +1,89 @@
+.cart 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid    white;
+    margin-top: 5rem;
+    width: 40rem;
+    height: 18rem;
+    flex-direction: column;
+    background-color: black;
+    border-radius: 1.2rem;
+   padding: 0.5rem;
+}
+
+.cart_Head
+{
+    color: white;
+    width: 34rem;
+    height: 5rem;
+    text-align: center;
+}
+
+.cartBody 
+{
+    background-color: grey;
+    width: 30rem;
+    display: flex;
+    flex-direction: column;
+    height: 10rem;
+    margin: 1.2rem 0;
+    gap: 0.9rem;
+    padding: 0.4rem;
+    border-radius: 0.9rem;
+}
+
+.cartHead 
+{
+    display: flex;
+   color: white;
+    height: 5rem;
+    gap: 1.5rem;
+    justify-content:space-around;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+.cartdetails
+{
+    display: flex; 
+    justify-content: space-around;
+    color: white;
+    height: 5rem;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.cartBtn 
+{
+   
+    width: 10rem;
+    height: 2rem;
+    display: flex;
+    gap: 1.5rem;
+
+
+}
+
+.cartBtn > button 
+{
+    width: 6rem;
+    height: 2rem;
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
+   justify-content: center;
+   align-items: center;
+   display: flex;
+}
+
+.cartBtn > button:hover 
+{
+    background-color: orange;
+    border: none;
+    box-shadow: 2px 1.5px 20px orange;
+}

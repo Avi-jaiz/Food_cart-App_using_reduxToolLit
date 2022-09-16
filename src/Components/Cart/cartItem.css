@@ -1,0 +1,48 @@
+
+.cartItem 
+{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid white;
+    width: 45rem;
+    height: 12rem;
+    background-color: white;
+    display: flex;
+    gap: 1.5rem;
+    margin: 1rem 0;
+    border-radius:2rem;
+    padding: 1.2rem;
+    justify-items:space-around;
+
+}
+
+.cartItemHead
+{
+    display: flex;
+    justify-content: space-around;
+    font-weight: bold;
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+.cartItemTotalPrice 
+{
+    background-color: black;
+    color: white;
+    width: 10rem;
+    text-align: center;
+    border-radius: 2rem;
+}
+
+.cartItemBtn
+{
+    width: 6rem;
+    position: relative;
+    left: 29rem;
+    height: 5rem;
+    padding: 0.3rem 0;
+    background-color: transparent;
+    border: 2px solid blue;
+    color: blue;
+    font-weight: bold;
+    font-size: 0.8rem;
+}

@@ -1,5 +1,7 @@
-import CartButton from "../UI/CartButton";
 import '../Components/header.css';
+import CartButton from '../Components/Cart/CartButton'
+import Cart from './Cart/Cart';
+
 const Header =()=>
 {
   return(
@@ -7,6 +9,8 @@ const Header =()=>
 <h3>Redux Cart</h3>
 
 <CartButton />
+
+
     </div>
   )
 }

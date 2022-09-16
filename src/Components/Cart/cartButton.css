@@ -28,3 +28,21 @@
     border-radius: 50%;
 
 }
+
+.cartButton:hover 
+{
+    background-color: cyan;
+    color: black;
+    box-shadow: 2px 1.5px 20px cyan;
+
+    
+
+}
+
+.badge:hover 
+{
+    background-color: black;
+    color: white;
+
+}
+
