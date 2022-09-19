@@ -1,0 +1,30 @@
+
+
+.productItem
+{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid white;
+    padding: 1.2rem 0.7rem;
+    margin: 0.7rem 0;
+    gap: 0.5rem;
+    background-color: white;
+    color: black;
+    width: 25rem;
+    border-radius: 1.2rem;
+
+}
+
+.productItemButton > button 
+{
+    width: 5.5rem;
+    height: 2.2rem;
+    background-color: orange;
+    color: white;
+    border: none;
+    border-radius: 0.2rem;
+    font-size: 0.9rem;
+    font-weight: bold;
+
+
+}

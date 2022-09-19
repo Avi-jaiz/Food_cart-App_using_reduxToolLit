@@ -1,35 +1,61 @@
-import '../Cart/cartItem.css'
+import { useDispatch } from 'react-redux';
+import '../Cart/cartItem.css';
+import { cartActions } from '../../Store/cart-slice';
 
-const CartItem =()=>
+const CartItem =(props)=>
 {
+    
+const dispatch =   useDispatch()
 
+const {id,price,title,quantity ,total } = props.items;
+
+console.log(props)
+
+
+const removeItemHandler =()=>
+{
+    dispatch(cartActions.removeItemFromItem(id))
+}
+const addItemHandler = () => {
+    dispatch(
+      cartActions.addItemToCart({
+        id:id,
+        title:title,
+        price:price,
+        quantity:quantity
+       
+      })
+    );
+  };
 
     return(
-        <>
-
-
-
-    
-<div className="cartItem">
+       
+       
+       <>
+<li className="cartItem">
     <div className="cartItemHead">
-        <h3>Test</h3>
+        <h3 >{title}</h3>
 
         <div className="cartItemTotalPrice">
-            <h2>Rs 240.00</h2>
+            <h2>{quantity*price}</h2>
         </div>
 
     </div>
 
     <div className="cartItemDescription">
-        The test describes the Item Present in the Cart.
+      Quantity :  {quantity}
 
     </div>
+    <div className='btn'>
+        
+    <button className='cartItemBtn' onClick={addItemHandler} >Add to Cart</button>
+    <button className='cartItemBtn' onClick={removeItemHandler}>Remove from Cart</button>
+    </div>
 
-    <button className='cartItemBtn'>Add to Cart</button>
 
 
 
-</div>
+</li>
     
 
 

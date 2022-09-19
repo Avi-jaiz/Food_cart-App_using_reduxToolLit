@@ -1,25 +1,51 @@
+import { useSelector } from 'react-redux';
 import '../Cart/cart.css';
 
-const Cart = () => {
+import CartItem from './CartItem';
+
+
+const Cart = (props) => {
+  
+  const cartItems = useSelector((state=>state.cart.items))
+
+
+
+
+
   return(
   <div className="cart">
     <div className="cart_Head">
       <h2>Your Shopping Cart</h2>
     </div>
-    <div className="cartBody">
-      <div className="cartHead">
-     <h2>Test Item</h2>
-        <h3>Rs. 240.00 <span>(Rs. 120/ item)</span></h3> 
-      </div>
+  <ul>
 
-      <div className="cartdetails">
-     <h2>x3</h2>
-        <div className='cartBtn'>
-          <button className='BtnChild'>-</button>
-          <button className='BtnChild'>+</button>
-        </div>
-      </div>
-    </div>
+    {cartItems.map((item)=>
+    {
+      return(
+<CartItem  key ={item.id}
+items ={
+  {
+    id:item.id,
+    title:item.name,
+    price:item.price,
+    total:item.total,
+    quantity:item.quantity,
+   
+
+  }
+} 
+  />
+      )
+    })}
+
+
+
+  </ul>
+
+ 
+     
+        
+       
   </div>
   )
 };

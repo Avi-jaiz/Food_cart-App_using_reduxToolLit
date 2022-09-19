@@ -9,7 +9,7 @@ function App() {
 
 const cartisVisible =  useSelector(state=>state.ui.cartIsVisible)
 
-console.log(cartisVisible)
+
 
   return (
     <div className="App">
@@ -17,8 +17,9 @@ console.log(cartisVisible)
 
 {cartisVisible && <Cart />}
 <Products />
+
      
-     <CartItem />
+
     </div>
   );
 }
